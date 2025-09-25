@@ -28,6 +28,9 @@
 				<a href="mailto:info@devstudio.com">info@devstudio.com</a>
 				<a href="tel:+380961111111">+38 096 111 11 11</a>
 			</div>
+			<div class="header-burger">
+				<span></span>
+			</div>
 		</div>
 	</header>
 
@@ -71,26 +74,25 @@
 				</article>
 			</div>
 		</section>
+		
 		<section class="do">
 			<div class="container">
-                <h2 class="do-title">What are we doing</h2>
-                <div class="do-cards">
-                    <article class="do-card">
-                        <a class="do_card" href="#">
-                            <img src="images/do-1.jpg" alt="do-1" width="370" height="294">
-                        </a>
-                    </article>
-                     <article class="do-card">
-                        <a class="do_card" href="#">
-                            <img src="images/do-2.jpg" alt="do-2" width="370" height="294">
-                        </a>
-                    </article>
-                     <article class="do-card">
-                        <a class="do_card" href="#">
-                            <img src="images/do-3.jpg" alt="do-3" width="370" height="294">
-                        </a>
-                    </article>
-                </div>
+				<div class="do-cards">
+					<article class="do-card">
+						<img src="images/do-1.jpg" alt="image content" width="300" height="200">
+						<h3 class="do-card-title">Desktop applications</h3>
+					</article>
+					<article class="do-card">
+						<img src="images/do-2.jpg" alt="image content" width="300" height="200">
+						<h3 class="do-card-title">Desktop applications</h3>
+					</article>
+					<article class="do-card">
+						<img src="images/do-3.jpg" alt="image content" width="300" height="200">
+						<h3 class="do-card-title">Desktop applications</h3>
+					</article>
+				</div>
+			</div>
+		</section>
 		<section class="team">
 			<div class="container">
 				<h2 class="team-title">Our team</h2>
@@ -275,16 +277,19 @@
 	</main>
 
 	<footer class="footer">
-		<div class="container">
-            <a class="footer-logo" href="#">
+		<div class="container footer-container">
+			<div>
+        <a class="footer-logo" href="#">
                 <img src="images/footer-logo.svg" alt="WbStudio" width="145" height="31">
             </a>
          <div class="inform">
             <h4 class="footer-title">Kharkov, Pobedy Ave., 26</h4>
             <p class="info">info@example.com</p>
             <p class="info">+38 099 111 11 11</p>
+			</div>
+        
          </div>
-        </div>
+        
       <div class="footer-social-block">
       <h3 class="footer-social-title">JOIN US</h3>
       <ul class="footer-social-list">
@@ -321,7 +326,7 @@
   </div>
 
 	</footer>
-	<svg xmlns="http://www.w3.org/2000/svg" class="custom">
+	<svg xmlns="http://www.w3.org/2000/svg" class="hidden">
 <symbol	viewBox="0 0 106 60" id="custom_1">	<path d="M53.425 27.4081C52.9819 26.8183 52.7699 26.1212 52.8203 25.4195V22.5363C52.8203 21.6525 53.0207 20.9808 53.4216 20.5213C53.8224 20.0618 54.511 19.833 55.4871 19.835C56.4044 19.835 57.0555 20.0305 57.4405 20.4216C57.8605 20.9206 58.0648 21.5307 58.018 22.1462V22.8238H56.3772V22.1374C56.383 21.9128 56.3671 21.6881 56.3296 21.4657C56.306 21.3137 56.2234 21.1731 56.0952 21.0669C55.9267 20.9523 55.7145 20.8968 55.5007 20.9114C55.2759 20.8969 55.0529 20.9555 54.8756 21.0757C54.7327 21.1933 54.6374 21.3476 54.6038 21.5156C54.5567 21.7509 54.5351 21.9896 54.5393 22.2283V25.7275C54.5134 26.065 54.5858 26.4028 54.7499 26.71C54.8315 26.814 54.9448 26.8964 55.0774 26.9482C55.2099 26.9999 55.3564 27.019 55.5007 27.0034C55.7109 27.0183 55.9195 26.9614 56.0816 26.845C56.2153 26.7304 56.3013 26.5809 56.3262 26.4197C56.3645 26.1875 56.3816 25.9531 56.3772 25.7187V25.0089H58.018V25.6571C58.0641 26.2986 57.8648 26.9355 57.4507 27.4697C57.0736 27.8979 56.4315 28.112 55.4871 28.112C54.5427 28.112 53.8292 27.8833 53.425 27.4081Z" />
 <path d="M60.2569 27.4374C59.8425 26.9887 59.6353 26.3346 59.6353 25.4694V22.4366C59.6353 21.5801 59.8425 20.9319 60.2569 20.492C60.6714 20.052 61.3644 19.833 62.336 19.835C63.3008 19.835 63.9904 20.054 64.4049 20.492C64.8193 20.9319 65.03 21.5801 65.03 22.4366V25.4694C65.03 26.3258 64.8193 26.9828 64.3981 27.4345C63.9768 27.8862 63.2906 28.112 62.336 28.112C61.3814 28.112 60.6748 27.8833 60.2569 27.4374ZM63.1004 26.71C63.2488 26.4289 63.3164 26.121 63.2974 25.8125V22.0993C63.3165 21.7968 63.25 21.4948 63.1038 21.2194C63.0205 21.1132 62.9044 21.0295 62.7686 20.9776C62.6329 20.9257 62.483 20.9079 62.336 20.9261C62.1886 20.9083 62.0384 20.9264 61.9022 20.9782C61.766 21.03 61.6492 21.1135 61.5648 21.2194C61.4155 21.494 61.3477 21.7964 61.3678 22.0993V25.8301C61.3472 26.1387 61.4148 26.447 61.5648 26.7276C61.6605 26.8223 61.7785 26.8981 61.9109 26.95C62.0434 27.002 62.1872 27.0289 62.3326 27.0289C62.4781 27.0289 62.6219 27.002 62.7543 26.95C62.8867 26.8981 63.0047 26.8223 63.1004 26.7276V26.71Z"/>
 <path d="M67.0035 19.9238H68.7701L70.0984 25.5195L71.4573 19.9238H73.1763L73.3496 28.0005H72.079L71.9431 22.3873L70.6318 28.0005H69.6126L68.2537 22.3668L68.128 28.0005H66.8439L67.0035 19.9238Z" />
